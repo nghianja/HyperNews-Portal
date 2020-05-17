@@ -1114,6 +1114,12 @@ files:
     class NewsConfig(AppConfig):
         name = 'news'
   learner_created: false
+- name: hypernews/news/templates/index.html
+  visible: true
+  learner_created: true
+- name: hypernews/db.sqlite3
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/102/stages/561/implement
-status: Unchecked
+status: Solved
 record: -1
