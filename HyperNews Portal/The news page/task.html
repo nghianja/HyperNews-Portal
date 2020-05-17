@@ -1,0 +1,34 @@
+<h2 style="text-align: center;">Description</h2>
+
+<p>Exciting: you got the first news material for your e-paper, and that news is just extraterrestrial! Now you are going to proudly show it on the site. For that purpose, you'll need to add a page to display news.</p>
+
+<h2 style="text-align: center;">Objectives</h2>
+
+<p>You will store data in the JSON file; the path to this file is saved in the <code class="language-json">NEWS_JSON_PATH</code> variable in the project settings. </p>
+
+<p>Your JSON file should contain an array of objects with obligatory <code class="language-json">created</code>, <code class="language-json">text</code>, <code class="language-json">title</code>, and <code class="language-json">link</code> fields:</p>
+
+<pre><code class="language-json">[
+  {
+    "created": "2020-02-22 16:40:00",
+    "text": "A new star appeared in the sky.",
+    "title": "The birth of the star",
+    "link": 9234732
+  },
+  ...
+]</code></pre>
+
+<p>The field <code class="language-json">created</code> should have the format <a target="_blank" href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes" rel="noopener noreferrer nofollow"><em>"%Y-%m-%d %H:%M:%S"</em></a>.</p>
+
+<p>Each news page has a unique link. In our case, the <code class="language-json">link</code> identifier should be a number. You can pick any number you want, just make sure that it is unique for every news material.</p>
+
+<h2 style="text-align: center;">Example</h2>
+
+<p>If you start the application on your computer with the <code class="language-json">python manage.py runserver</code> command, the page on the <em>localhost:8000/news/9234732/</em> should display news as:</p>
+
+<pre><code class="language-html">&lt;h2&gt;The birth of a star&lt;/h2&gt;
+&lt;p&gt;2020-02-22 16:40:00&lt;/p&gt;
+&lt;p&gt;A new star appeared in the sky.&lt;/p&gt;
+</code></pre>
+
+<p>Add a link to the future main page with <code class="language-json">target="_blank" href="/news/"</code> below.</p>
