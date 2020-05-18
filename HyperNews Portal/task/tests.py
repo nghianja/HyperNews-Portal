@@ -17,6 +17,9 @@ class HyperNewsTestRunner(HyperNewsTest):
             TestCase(attach=self.check_main_header),
             TestCase(attach=self.check_main_page),
             TestCase(attach=self.check_main_page_create_link),
+            # 4 task
+            TestCase(attach=self.check_creating_news),
+            TestCase(attach=self.check_create_page_main_link),
         ]
 
     def check(self, reply, attach):
