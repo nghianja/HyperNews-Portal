@@ -13,6 +13,10 @@ class HyperNewsTestRunner(HyperNewsTest):
             # 2 task
             TestCase(attach=self.check_news_page),
             TestCase(attach=self.check_news_page_main_link),
+            # 3 task
+            TestCase(attach=self.check_main_header),
+            TestCase(attach=self.check_main_page),
+            TestCase(attach=self.check_main_page_create_link),
         ]
 
     def check(self, reply, attach):

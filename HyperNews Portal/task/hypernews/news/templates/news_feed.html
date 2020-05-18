@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HyperNews Portal: News Feed</title>
+</head>
+<body>
+    <h2>Hyper news</h2>
+
+{% for key, value in news_feed.items %}
+    <h4>{{ key }}</h4>
+
+    <ul>
+    {% for element in value %}
+        <li><a href="/news/{{ element.link }}/">{{ element.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% endfor %}
+
+    <a href="/news/create/" target="_blank">Create Page</a>
+</body>
+</html>

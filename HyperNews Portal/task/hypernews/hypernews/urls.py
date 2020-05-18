@@ -20,5 +20,6 @@ from news import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
-    path('news/<int:link>/', views.news)
+    path('news/<int:link>/', views.news),
+    path('news/', views.news)
 ]
