@@ -18,5 +18,11 @@
 {% endfor %}
 
     <a href="/news/create/" target="_blank">Create Page</a>
+
+    <form action="/news/" method="get">{% csrf_token %}
+        <label for="q">Query: </label>
+        <input id="q" type="text" name="q">
+        <input type="submit" value="Search">
+    </form>
 </body>
 </html>
